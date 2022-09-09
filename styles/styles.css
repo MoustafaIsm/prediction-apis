@@ -1,0 +1,38 @@
+/* Reset */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img {
+    height: 100%;
+}
+
+/* Body */
+.body-wrapper {
+    display: flex;
+}
+
+.body-wrapper > section {
+    width: 50vw;
+}
+
+/* Image */
+.image-wrapper {
+    
+}
+
+/* Content */
+.content-wrapper {
+    
+}
+
+/* Utilities */
+
+
+
+/* Media Query */
+
+
