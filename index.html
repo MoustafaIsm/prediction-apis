@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Who Are You ?</title>
     <link rel="stylesheet" href="./styles/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Barlow&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -16,10 +17,10 @@
             <img src="" alt="Dog Image">
         </section>
         <!-- Content -->
-        <section class="content-wrapper center-contents">
+        <section class="center-contents content-wrapper">
             <!-- User Input -->
             <div class="user-input center-contents">
-                <form class="form">
+                <form class="input-form">
                     <label for="user-name"> Name: </label>
                     <input type="text" name="user-name" placeholder="Enter your name" class="input-text">
                 </form>
@@ -29,7 +30,23 @@
             <div class="divider"></div>
             <!-- Output -->
             <div class="output-wrapper">
-
+                <form class="output-form">
+                    <!-- Gender -->
+                    <div class="output">
+                        <label for="gender"> Gender: </label>
+                        <input type="text" name="gender" placeholder="Gender">
+                    </div>
+                    <!-- Age -->
+                    <div class="output">
+                        <label for="age"> Age: </label>
+                        <input type="number" name="age" placeholder="Age">
+                    </div>
+                    <!-- Nationality -->
+                    <div class="output">
+                        <label for="nationality"> Nationality(ies): </label>
+                        <input type="text" name="nationality" placeholder="Nationality(ies)">
+                    </div>
+                </form>
             </div>
         </section>
 

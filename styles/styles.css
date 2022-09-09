@@ -15,6 +15,7 @@ img {
 .body-wrapper {
     display: flex;
     height: 100vh;
+    font-family: 'Barlow', sans-serif;
 }
 
 .body-wrapper > section {
@@ -36,11 +37,11 @@ img {
     
 }
 
-.form {
+.input-form {
 
 }
 
-.form > label {
+.input-form > label {
     color: #1C7293;
     margin-right: 10px;
 }
@@ -58,6 +59,37 @@ img {
     border: 0px;
     border-radius: 15px;
 }
+
+.output-wrapper {
+    width: 60%;
+    background-color: #21295C;
+    padding: 5%;
+    border-radius: 15px;
+}
+
+.output-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.output {
+    display: flex;
+    justify-content: space-between;
+    margin: 5% 0%;
+}
+
+.output > label {
+    width: 50%;
+    margin-right: 1%;
+    color: #FFFFFF;
+}
+
+.output > input {
+    padding: 5px 5px;
+    border: 2px solid #1C7293;
+    width: 70%;
+}
+
 
 /* Utilities */
 .center-contents {
