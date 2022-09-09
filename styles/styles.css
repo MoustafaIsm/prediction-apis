@@ -41,7 +41,8 @@ img {
 }
 
 .form > label {
-    color: #21295C;
+    color: #1C7293;
+    margin-right: 10px;
 }
 
 .input-text {
@@ -64,6 +65,12 @@ img {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+
+.divider {
+    border-bottom: 3px solid #1C7293;
+    width: 70%;
+    margin: 20px 0px;
 }
 
 
