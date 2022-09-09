@@ -84,10 +84,12 @@ img {
     color: #FFFFFF;
 }
 
-.output > input {
+.output > p {
     padding: 5px 5px;
     border: 2px solid #1C7293;
     width: 70%;
+    height: 30px;
+    background-color: #FFFFFF;
 }
 
 
