@@ -14,7 +14,6 @@ img {
 /* Body */
 .body-wrapper {
     display: flex;
-    height: 100vh;
     font-family: 'Barlow', sans-serif;
 }
 
@@ -24,13 +23,16 @@ img {
 
 /* Image */
 .img-wrapper {
-    padding: 10%;
-    
+    padding: 5%;
+}
+
+.img-wrapper > img {
+    border: 5px solid #1C7293;
 }
 
 /* Content */
 .content-wrapper {
-    
+    width: 100vh;
 }
 
 .user-input {
@@ -38,10 +40,12 @@ img {
 }
 
 .input-form {
-
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-.input-form > label {
+.input-form label {
     color: #1C7293;
     margin-right: 10px;
 }
@@ -58,6 +62,11 @@ img {
     color: #FFFFFF;
     border: 0px;
     border-radius: 15px;
+}
+
+.btn:hover {
+    cursor: pointer;
+    background-color: #363f7b;
 }
 
 .output-wrapper {
