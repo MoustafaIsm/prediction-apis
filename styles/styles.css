@@ -170,6 +170,7 @@ img {
     margin: 5% 30%;
     padding: 20px; 
     border: 1px solid #888;
+    border-radius: 20px;
     width: 30%;
 }
 

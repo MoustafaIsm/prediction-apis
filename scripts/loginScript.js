@@ -4,6 +4,12 @@ const signupForm = document.querySelector("#signup-form");
 const signupControl = document.querySelector("#signup-control");
 const loginBtn = document.querySelector("#login-btn");
 const span = document.querySelector("#close-wrapper");
+const loginEmail = document.querySelector("#login-email");
+const loginPassword = document.querySelector("#login-password");
+const signupUsername = document.querySelector("#signup-username");
+const signupEmail = document.querySelector("#signup-email");
+const signupPassword = document.querySelector("#signup-password");
+const signupBtn = document.querySelector("#signup-btn");
 
 // set the source of the image
 fetch('https://dog.ceo/api/breeds/image/random').then((response) => response.json()).then((data) => dogImg.src = data.message);
@@ -14,6 +20,8 @@ signupControl.addEventListener("click", toggleSignupForm);
 span.addEventListener("click", toggleSignupForm)
 // Login button
 loginBtn.addEventListener("click", loginUser);
+// Signup button
+signupBtn.addEventListener("click", createAccount);
 
 // Functions
 function toggleSignupForm() {
@@ -21,5 +29,24 @@ function toggleSignupForm() {
 }
 
 function loginUser() {
-    console.log("Login");
+    let emailInput = loginEmail.value;
+    let passwordInput = loginPassword.value;
+    if (emailInput != "" && passwordInput != "") {
+        let emailStored = localStorage.getItem("email");
+        let passwordStored = localStorage.getItem("password");
+        if (emailInput == emailStored && passwordInput == passwordStored) {
+            window.location.href = "./index.html";
+        }
+    }
+}
+
+function createAccount() {
+    let username = signupUsername.value;
+    let email = signupEmail.value;
+    let password = signupPassword.value;
+    if (username != "" && email != "" && password != "") {
+        localStorage.setItem("username", username);
+        localStorage.setItem("email", email);
+        localStorage.setItem("password", password);
+    }
 }
