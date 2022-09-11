@@ -10,7 +10,7 @@
 </head>
 
 <body>
-    <div class="login-body-wrapper">
+    <div class="login-body-wrapper column">
         <!-- Login -->
         <div class="login-wrapper">
             <h1>Login here !</h1>
@@ -24,37 +24,37 @@
                     <input type="password" placeholder="Enter your password" name="password" class="input-text"
                         id="login-password">
                 </div>
+                <p id="response"></p>
                 <button type="button" class="btn" id="login-btn">Log in</button>
                 <div class="account-wrapper">
-                    <p> Don't have and account? <button type="button" class="btn" id="signup-control">Sign up</button>
+                    <p> Don't have and account? <span id="signup-control"> Sign up</span>
                     </p>
                 </div>
             </form>
         </div>
         <!-- Dog image -->
         <div class="img-wrapper center-contents">
-            <img src="" alt="Dog Image" id="dog-img" width="100%">
+            <img src="" alt="Dog Image" id="dog-img" width="50%">
         </div>
         <!-- Sign up -->
-        <div class="signup-wrapper hide signup-content-wrapper" id="signup-form">
+        <div class="signup-wrapper hide signup-content-wrapper max-width" id="signup-form">
             <span class="close-wrapper" id="close-wrapper">&times;</span>
             <h1>Signup here !</h1>
             <form class="login-form input-form">
                 <div>
                     <label for="username"> Username: </label>
-                    <input type="text" placeholder="Enter your desired username" name="username" class="input-text"
-                        id="signup-username" </div>
-                    <div>
-                        <label for="email"> Email: </label>
-                        <input type="email" placeholder="Enter your desired email" name=email class="input-text"
-                            id="signup-email">
-                    </div>
-                    <div>
-                        <label for="password"> Password: </label>
-                        <input type="password" placeholder="Enter your password" name="password" class="input-text"
-                            id="signup-password">
-                    </div>
-                    <button type="button" class="btn" id="signup-btn">Create account</button>
+                    <input type="text" placeholder="Username" name="username" class="input-text" id="signup-username">
+                </div>
+                <div>
+                    <label for="email"> Email: </label>
+                    <input type="email" placeholder="Email" name=email class="input-text" id="signup-email">
+                </div>
+                <div>
+                    <label for="password"> Password: </label>
+                    <input type="password" placeholder="Password" name="password" class="input-text"
+                        id="signup-password">
+                </div>
+                <button type="button" class="btn" id="signup-btn">Create account</button>
             </form>
         </div>
     </div>

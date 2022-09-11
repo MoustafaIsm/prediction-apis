@@ -10,6 +10,7 @@ const signupUsername = document.querySelector("#signup-username");
 const signupEmail = document.querySelector("#signup-email");
 const signupPassword = document.querySelector("#signup-password");
 const signupBtn = document.querySelector("#signup-btn");
+const response = document.querySelector("#response");
 
 // set the source of the image
 fetch('https://dog.ceo/api/breeds/image/random').then((response) => response.json()).then((data) => dogImg.src = data.message);
@@ -36,6 +37,9 @@ function loginUser() {
         let passwordStored = localStorage.getItem("password");
         if (emailInput == emailStored && passwordInput == passwordStored) {
             window.location.href = "./index.html";
+        } else {
+            response.textContent = "Wrong email or password!"
+            response.style.color = "red";
         }
     }
 }
@@ -48,5 +52,8 @@ function createAccount() {
         localStorage.setItem("username", username);
         localStorage.setItem("email", email);
         localStorage.setItem("password", password);
+        toggleSignupForm();
+        response.textContent = "Account created!"
+        response.style.color = "green";
     }
 }
