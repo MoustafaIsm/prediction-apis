@@ -96,7 +96,8 @@ img {
 
 .login-body-wrapper {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    /* justify-content: space-between; */
     font-family: 'Barlow', sans-serif;
     margin-top: 50px;
 }
@@ -138,6 +139,10 @@ img {
 }
 
 /* Sign up */
+.signup-wrapper {
+    padding: 3%;
+}
+
 .hide {
     display: none;
 }
