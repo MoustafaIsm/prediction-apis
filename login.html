@@ -23,14 +23,15 @@
                     <label for="password"> Password: </label>
                     <input type="password" placeholder="Enter your password" name="password" class="input-text">
                 </div>
-                <button type="button" class="btn">Log in</button>
+                <button type="button" class="btn" id="login-btn">Log in</button>
                 <div class="account-wrapper">
-                    <p> Don't have and account? <span>Sign Up</span></p>
+                    <p> Don't have and account? <button type="button" class="btn" id="signup-control">Sign up</button>
+                    </p>
                 </div>
             </form>
         </div>
         <!-- Sign up -->
-        <div class="signup-wrapper">
+        <div class="signup-wrapper hide" id="signup-form">
             <h1>Signup here !</h1>
             <form class="login-form input-form">
                 <div>
@@ -49,6 +50,7 @@
             </form>
         </div>
     </div>
+    <script src="./scripts/loginScript.js"></script>
 </body>
 
 </html>

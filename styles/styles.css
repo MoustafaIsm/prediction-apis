@@ -138,8 +138,8 @@ img {
 }
 
 /* Sign up */
-.signup-wrapper {
-    /* display: none; */
+.hide {
+    display: none;
 }
 
 /* Utilities */

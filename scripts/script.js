@@ -16,7 +16,6 @@ submitBtn.addEventListener("click", submitUserName);
 // Bored button
 boredBtn.addEventListener("click", getTodoText);
 
-
 // Functions
 function submitUserName() {
     let name = userName.value;
@@ -45,3 +44,5 @@ function getTodoText() {
     axios.get("https://www.boredapi.com/api/activity")
         .then((response) => todo.textContent = response.data.activity);
 }
+
+
