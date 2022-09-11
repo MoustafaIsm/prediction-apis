@@ -56,20 +56,6 @@ img {
     border-color: #1C7293;
 }
 
-.btn {
-    padding: 10px 30px;
-    margin: 10px 0px;
-    background-color: #21295C;
-    color: #FFFFFF;
-    border: 0px;
-    border-radius: 15px;
-}
-
-.btn:hover {
-    cursor: pointer;
-    background-color: #363f7b;
-}
-
 .output-wrapper {
     width: 60%;
     background-color: #21295C;
@@ -102,8 +88,36 @@ img {
     background-color: #FFFFFF;
 }
 
+.bored-wrapper {
+    display: flex;
+    width: 60%;
+    padding: 5%;
+    justify-content: center;
+}
+
+.todo-text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5%;
+}
+
 
 /* Utilities */
+.btn {
+    padding: 10px 30px;
+    margin: 10px 0px;
+    background-color: #21295C;
+    color: #FFFFFF;
+    border: 0px;
+    border-radius: 15px;
+}
+
+.btn:hover {
+    cursor: pointer;
+    background-color: #363f7b;
+}
+
 .center-contents {
     display: flex;
     flex-direction: column;
