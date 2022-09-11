@@ -5,13 +5,16 @@ const submitBtn = document.querySelector("#submit-btn");
 const genderDisplay = document.querySelector("#gender-display");
 const ageDisplay = document.querySelector("#age-display");
 const nationalityDisplay = document.querySelector("#nationality-display");
+const boredBtn = document.querySelector("#bored-btn");
+const todo = document.querySelector("#todo");
 
 // set the source of the image
 fetch('https://dog.ceo/api/breeds/image/random').then((response) => response.json()).then((data) => dogImg.src = data.message);
 
 // Submit button
 submitBtn.addEventListener("click", submitUserName);
-
+// Bored button
+boredBtn.addEventListener("click", getTodoText);
 
 
 // Functions
@@ -36,4 +39,9 @@ function submitUserName() {
                 }
             });
     }
+}
+
+function getTodoText() {
+    axios.get("https://www.boredapi.com/api/activity")
+        .then((response) => todo.textContent = response.data.activity);
 }
