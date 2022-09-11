@@ -36,10 +36,6 @@ img {
     width: 100vh;
 }
 
-.user-input {
-    
-}
-
 .input-form {
     display: flex;
     flex-direction: column;
